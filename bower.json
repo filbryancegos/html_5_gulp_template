@@ -1,0 +1,28 @@
+{
+  "name": "Bryan Egos",
+  "version": "0.0.0",
+  "homepage": "index",
+  "authors": [
+    "Eric"
+  ],
+  "license": "mit",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.3",
+    "fontawesome": "~4.3.0",
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  },
+  "description": "hot",
+  "main": "index",
+  "keywords": [
+    "in"
+  ],
+  "private": true
+}

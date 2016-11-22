@@ -1,0 +1,185 @@
+// Add custom font
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+$font-family-base: 'Raleway', sans-serif;
+
+// Import bootstrap and fontawesome
+@import "bootstrap";
+@import "font-awesome";
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+header {
+    .header-bg {
+        background: url("../images/header-bg.jpg") no-repeat;
+        background-size: cover;
+        height: 740px;
+        width: 100%;
+        .header-top-bg {
+            background: rgba(2, 2, 2, 0.63);
+            padding: 10px 0;
+            .text-logo {
+                font-size: 40px;
+                color: #fff;
+                span {
+                    color: #F1AF34;
+                }
+            }
+            .navbar {
+                margin-bottom: 0;
+                min-height: inherit;
+            }
+            .navbar-default {
+                background-color: transparent;
+                border-color: transparent;
+                .navbar-nav {
+                    > .active {
+                        a {
+                            background-color: transparent;
+                        }
+                    }
+                    > li {
+                        a {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            color: #fff;
+                            padding: 16px 24px;
+                            &:hover{
+                                border-bottom: 5px solid #EFAF3C;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.container {
+    .text-content {
+        color: #fff;
+        font-size: 50px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 31%;
+        span {
+            font-size: 20px;
+            background-color: #423b2b;
+            padding: 5px 10px;
+        }
+    }
+    .fa-arrow-circle-down {
+        display: flex;
+        justify-content: center;
+        &::before {
+            font-size: 70px;
+            color: #F1AF34;
+        }
+    }
+    .fa-arrow-circle-up {
+        display: flex;
+        justify-content: center;
+        &::before {
+            font-size: 70px;
+            color: #F1AF34;
+        }
+    }
+    .box-section {
+        text-align: center;
+        color: #463f2f;
+        .fa-wordpress {
+            padding: 20px 0;
+            &::before {
+                font-size: 70px;
+            }
+        }
+        .fa-html5 {
+            padding: 20px 0;
+            &::before {
+                font-size: 70px;
+            }
+        }
+        .fa-css3 {
+            padding: 20px 0;
+            &::before {
+                font-size: 70px;
+            }
+        }
+        .fa-spotify {
+            padding: 20px 0;
+            &::before {
+                font-size: 70px;
+            }
+        }
+        h4 {
+            letter-spacing: 3px;
+        }
+    }
+    .button {
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+          &::after{
+              content: '»';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+              transition: 0.5s;
+          }
+      }
+      &:hover{
+          span {
+              padding-right: 25px;
+              &::after{
+                  opacity: 1;
+                  right: 0;
+              }
+          }
+      }
+    }
+}
+
+
+
+// .button span {
+//   cursor: pointer;
+//   display: inline-block;
+//   position: relative;
+//   transition: 0.5s;
+// }
+//
+// .button span:after {
+//   content: '»';
+//   position: absolute;
+//   opacity: 0;
+//   top: 0;
+//   right: -20px;
+//   transition: 0.5s;
+// }
+//
+// .button:hover span {
+//   padding-right: 25px;
+// }
+//
+// .button:hover span:after {
+//   opacity: 1;
+//   right: 0;
+// }
