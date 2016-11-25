@@ -12,10 +12,13 @@ $font-family-base: 'Raleway', sans-serif;
 }
 header {
     .header-bg {
-        background: url("../images/header-bg.jpg") no-repeat;
+        background-image: url("../images/header-bg.jpg");
         background-size: cover;
-        height: 740px;
-        width: 100%;
+        min-height: 740px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         .header-top-bg {
             padding: 10px 0;
             position: fixed;
@@ -87,6 +90,27 @@ header {
     }
     .about-me {
         padding: 50px 10px;
+        position: relative;
+        h1 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            padding: 27px;
+            line-height: 72px;
+            &::after {
+                content: '';
+                position: relative;
+                width: 6%;
+                height: 4px;
+                background: #f1af34;
+                bottom: 0px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .testimonials-content {
+        padding: 0 0 40px 0;
         position: relative;
         h1 {
             font-weight: bold;
@@ -185,11 +209,10 @@ header {
         }
     }
 }
-
 .section-box {
     text-align: center;
     color: #fff;
-    padding: 40px 0 0 0;
+    padding: 80px 0 40px 0;
     .col-border-a {
         padding: 20px;
     }
@@ -223,7 +246,7 @@ header {
         padding: 30px 100px;
         float: left;
         width: 50%;
-        height: 400px;
+        min-height: 400px;
         p {
             display: none;
         }
@@ -233,7 +256,7 @@ header {
         padding: 30px 100px;
         float: left;
         width: 50%;
-        height: 400px;
+        min-height: 400px;
         p {
             display: none;
         }
@@ -244,7 +267,7 @@ header {
         padding: 30px 100px;
         float: inherit;
         width: 50%;
-        height: 400px;
+        min-height: 400px;
         p {
             display: none;
         }
@@ -254,7 +277,7 @@ header {
         padding: 30px 100px;
         float: left;
         width: 50%;
-        height: 400px;
+        min-height: 400px;
         p {
             display: none;
         }
@@ -300,12 +323,35 @@ header {
             }
         }
     }
+    .portfolio-content {
+        padding: 40px 0 0 0;
+        h1 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            padding: 27px;
+            line-height: 72px;
+            text-transform: uppercase;
+            &::after {
+                content: '';
+                position: relative;
+                width: 6%;
+                height: 4px;
+                background: #f1af34;
+                bottom: 0px;
+                margin: 0 auto;
+            }
+        }
+    }
 }
 .content-bg {
-    background: url("../images/content-bg.jpg") no-repeat;
+    background-image: url("../images/content-bg.jpg");
+    min-height: 740px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 740px;
-    width: 100%;
+    margin-top: 100px;
     h1 {
         font-weight: bold;
         display: flex;
@@ -327,7 +373,16 @@ header {
         padding-top: 40px;
     }
 }
-
+.skill-bg {
+    background-image: url("../images/skills-bg.jpg");
+    min-height: 740px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    margin-top: 100px;
+}
 .footer-bg {
     background: #1b1919;
     padding: 40px 0;
@@ -372,7 +427,6 @@ header {
         }
     }
 }
-
 .back-top {
     position: fixed;
     bottom: 40px;
@@ -389,7 +443,7 @@ header {
         height: 50px;
         cursor: pointer;
         &:hover {
-            background: #676154;
+            background: #F1AF34;
             -webkit-transform: scale(1.2);
             -ms-transform: scale(1.2);
             transform: scale(1.2);
@@ -562,6 +616,14 @@ input {
             }
             .col-c-bg {
                 padding: 30px 20px;
+            }
+        }
+        .footer-bg {
+            p {
+                text-align: center;
+            }
+            .social-icons {
+                text-align: center;
             }
         }
     }

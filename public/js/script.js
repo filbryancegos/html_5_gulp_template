@@ -148,3 +148,37 @@ $(window).scroll(function() {
  	});
 
  })();
+
+$(function() {
+    window.sr = ScrollReveal();
+        sr.reveal('.about-me h1', { duration: 1000 }, 50);
+        sr.reveal('.about-me p', { duration: 1000 }, 50);
+        sr.reveal('.col-skill h1', { duration: 1000 }, 50);
+        sr.reveal('.col-skill p', { duration: 1000 }, 50);
+        sr.reveal('.col-skill .bar', { duration: 1000 }, 50);
+        sr.reveal('.section-box .col-c-bg', { duration: 1000 }, 50);
+        sr.reveal('.section-box .col-b-bg', { duration: 1000 }, 50);
+        sr.reveal('.section-box .col-a-bg', { duration: 1000 }, 50);
+        sr.reveal('.section-box .col-d-bg', { duration: 1000 }, 50);
+        sr.reveal('.testimonials-content h1', { duration: 1000 }, 50);
+        sr.reveal('.testimonials-content p', { duration: 1000 }, 50);
+        sr.reveal('.content-bg h1', { duration: 1000 }, 50);
+        sr.reveal('.content-bg p', { duration: 1000 }, 50);
+        sr.reveal('.content-bg .contact-form', { duration: 1000 }, 50);
+});
+
+$(function() {
+  $('#portfolio').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    image: {
+      cursor: null,
+      titleSrc: 'title'
+    },
+    gallery: {
+      enabled: true,
+      preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+      navigateByImgClick: true
+		}
+  });
+});
